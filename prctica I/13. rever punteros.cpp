@@ -1,15 +1,15 @@
 #include <iostream>
-
 using namespace std;
 
-void rever(int *a, int n)
+void invertir(int a[], int n)
 {
-	for(; a; *a++, --n)
-	{
-		int temp = *a;
-		*a = *(a+n);
-		*(a+n) = temp;
-	}
+    for(int i=0 ; i<n/2 ; ++i)
+    {
+        int tmp = *( a + i ) ;
+        int fin = n-i-1;
+        *( a + i ) = *( a + fin ) ;
+        *( a + fin ) = tmp ;
+    }
 }
 
 int main()
