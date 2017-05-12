@@ -1,0 +1,69 @@
+de <iostream>
+#include <math.h>
+using namespace std;
+
+class Point {
+public:
+	double x, y;
+	
+	void offset(double offsetX, double offsetY) {
+		x += offsetX; y += offsetY;
+	}
+	
+	void print() {
+		cout << "( " << x << " , " << y << " )";
+	}
+};
+
+class Vector{
+public:
+	Point start, end;
+	void offset(double offsetX, double offsetY) {
+		start.offset(offsetX, offsetY);
+		end.offset(offsetX, offsetY);
+	}
+	void print(){
+		start.print();
+		cout << " -> ";
+		end.print();
+		cout << endl;
+	}
+	void origen_Start(){
+		start.x = 0.0;
+		start.y = 0.0;
+	}
+	double distancia(){
+		return sqrt(((start.x - end.x)*(start.x - end.x))+((start.y - end.y)*(start.y - end.y)));
+	}
+	
+	void producto_Escalar(int &v){
+		start.x = start.x * v;
+		start.y = start.y * v;
+	}
+};
+
+int main() {
+	
+	int v = 2;
+	Vector vec;
+	vec.start.x = 3; vec.end.x = 5;
+	vec.start.y = 0; vec.end.y = 5;
+	cout<<"\n\t   VECTOR"<<endl<<endl;
+	vec.print();
+	
+//	cout<<"\n\ncambio de posicion de los puntos"<<endl<<endl;
+//	vec.offset(0.3, 3.1);
+//	vec.print();
+//	
+//	cout<<"\n\ncambio de posicion del punto inicial a origen "<<endl<<endl;
+//	vec.origen_Start();
+//	vec.print();
+	
+	cout<<"\n\nDistancia :"<< vec.distancia();
+	cout<<"\n\nProducto Escalar :";
+	vec.producto_Escalar(v);
+	vec.print();
+	
+	return 0;
+}
+
