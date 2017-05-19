@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1495146004 source:d:\3s u\cci codigod\complejo\main.cpp
+	"Complejo.h"
+
+1495144533 d:\3s u\cci codigod\complejo\include\complejo.h
+	<math.h>
+	<iostream>
+
+1495145931 source:d:\3s u\cci codigod\complejo\src\complejo.cpp
+	"Complejo.h"
+
