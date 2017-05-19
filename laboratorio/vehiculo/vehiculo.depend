@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1495216869 source:d:\3s u\cci codigod\vehiculo\main.cpp
+	"Carro.h"
+	"Avion.h"
+	"Vehiculo.h"
+
+1495215136 d:\3s u\cci codigod\vehiculo\include\carro.h
+	"Vehiculo.h"
+
+1495217176 d:\3s u\cci codigod\vehiculo\include\vehiculo.h
+	<iostream>
+	<string.h>
+	<sstream>
+
+1495214970 source:d:\3s u\cci codigod\vehiculo\src\avion.cpp
+	"Avion.h"
+
+1495216923 d:\3s u\cci codigod\vehiculo\include\avion.h
+	"Vehiculo.h"
+
+1495213428 source:d:\3s u\cci codigod\vehiculo\src\carro.cpp
+	"Carro.h"
+
+1495213008 source:d:\3s u\cci codigod\vehiculo\src\vehiculo.cpp
+	"Vehiculo.h"
+
