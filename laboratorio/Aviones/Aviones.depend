@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1496422764 source:d:\cv-cci\aviones\main.cpp
+	"Avion.h"
+	"Torre.h"
+	"Avion_1.h"
+	"Avion_2.h"
+
+1496422764 d:\cv-cci\aviones\include\avion.h
+	<iostream>
+	<vector>
+
+1496422764 d:\cv-cci\aviones\include\torre.h
+	"Avion.h"
+
+1496422847 d:\cv-cci\aviones\include\avion_1.h
+	"Avion.h"
+
+1496422847 d:\cv-cci\aviones\include\avion_2.h
+	"Avion.h"
+
+1496422780 source:d:\cv-cci\aviones\src\avion.cpp
+

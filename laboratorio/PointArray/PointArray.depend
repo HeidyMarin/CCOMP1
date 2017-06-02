@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1485905436 source:d:\cv-cci\pointarray\main.cpp
+	<iostream>
+	"PointArray.h"
+
+1485718427 d:\cv-cci\pointarray\include\pointarray.h
+	<iostream>
+
+1485718174 source:d:\cv-cci\pointarray\src\pointarray.cpp
+	"PointArray.h"
+
