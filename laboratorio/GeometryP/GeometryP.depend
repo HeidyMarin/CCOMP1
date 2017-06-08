@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1485812404 source:d:\cv-cci\geometryp\main.cpp
+	<iostream>
+	"Geometry.h"
+
+1485716465 d:\cv-cci\geometryp\include\geometry.h
+	<iostream>
+	<cmath>
+
+1485718174 source:d:\cv-cci\geometryp\src\geometry.cpp
+	"Geometry.h"
+
