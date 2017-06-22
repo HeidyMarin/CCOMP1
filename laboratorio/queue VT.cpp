@@ -25,9 +25,8 @@ Queue<T> operator-(const Queue<T> &s1, const Queue<T> &s2)
 		bool pase=true;
 		for(int a=0;a<s2.items.size();++a)
 		{
-			if(s2.items[a]==s1.items[i])
+			if(s1.items[a]==s2.items[i])
 				pase=false;
-			break;
 		}
 		if(pase==true)
 		{
@@ -36,7 +35,6 @@ Queue<T> operator-(const Queue<T> &s1, const Queue<T> &s2)
 	}
 	return result;
 }
-				   
 template<class T>
 ostream& operator<<(ostream &output, const Queue<T> &s3)
 {
@@ -44,9 +42,8 @@ ostream& operator<<(ostream &output, const Queue<T> &s3)
 	{
 		output <<s3.items[i] << endl;
 	}
-		return output;
-}
-									  
+	return output;
+	}
 template<class T>
 class Queue
 {
@@ -54,16 +51,14 @@ class Queue
 	friend Queue<T> operator- <>(const Queue<T> &s1, const Queue<T> &s2);
 	friend ostream& operator<< <>(ostream &output, const Queue<T> &s1);
 	vector<T> items;
-								  
+											  
 	public:
 		bool empty() const {return items.empty();}
 		void push(const T &item) {items.push_back(item);}
-		T pop()
+		void pop()
 		{
-			T last=items.begin();
-			items.pop_back();
-			return last;
-			}
+			items.erase(items.begin());
+		}
 };
 									  
 int main()
@@ -73,10 +68,18 @@ int main()
 	s1.push(1);
 	s1.push(2);
 	s1.push(3);
+	s1.pop();
 	s2.push(3);
 	s2.push(2);
 	s2.push(4);
-	Queue<int> c=s1-s2;
+	s2.pop();
+	Queue<int> c=s1+s2;
+	c.pop();
+	cout<< s1 << endl;
+	cout<< s2 << endl;
 	cout<< c << endl;
+	
+
+	
 	return 0;
 }
